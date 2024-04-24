@@ -7,5 +7,5 @@ pytest ${EXTRA_PYTEST_ARGS:-} --cov ignite --cov-report term-missing --cov-repor
 
 if [ -z ${NUM_TPU_WORKERS+x} ]; then
     export NUM_TPU_WORKERS=1
-    pytest ${EXTRA_PYTEST_ARGS:-} --cov ignite --cov-append --cov-report term-missing --cov-report xml tests/ -vvv -m tpu
+    pytest ${EXTRA_PYTEST_ARGS:-} --cache-dir .tpu-multi --cov ignite --cov-append --cov-report term-missing --cov-report xml tests/ -vvv -m tpu
 fi
