@@ -97,6 +97,11 @@ jobs:
           command: |
             python -c "import torch_xla; print('torch xla version:', torch_xla.__version__)"
             bash tests/run_tpu_tests.sh
+          on_retry_command: |
+            if [ -f .ignite_testing.pid ] && [ -s .ignite_testing.pid ]; then
+              echo sending kill signal until process group no longer exists...
+              python tests/utils/kill_process_group.py .ignite_testing.pid
+            fi
           new_command_on_retry: USE_LAST_FAILED=1  bash tests/run_tpu_tests.sh
         env:
           LD_LIBRARY_PATH: ${{ env.LD_LIBRARY_PATH }}:${{ env.Python_ROOT_DIR }}/lib

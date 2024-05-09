@@ -126,6 +126,11 @@ jobs:
           timeout_minutes: 25
           shell: bash
           command: SKIP_DISTRIB_TESTS=${{ matrix.skip-distrib-tests }} bash tests/run_cpu_tests.sh
+          on_retry_command: |
+            if [ -f .ignite_testing.pid ] && [ -s .ignite_testing.pid ]; then
+              echo sending kill signal until process group no longer exists...
+              python tests/utils/kill_process_group.py .ignite_testing.pid
+            fi
           new_command_on_retry: USE_LAST_FAILED=1  SKIP_DISTRIB_TESTS=${{ matrix.skip-distrib-tests }} bash tests/run_cpu_tests.sh
 
       - name: Upload coverage to Codecov

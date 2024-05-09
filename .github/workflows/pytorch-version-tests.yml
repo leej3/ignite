@@ -98,6 +98,11 @@ jobs:
           timeout_minutes: 25
           shell: bash
           command: bash tests/run_cpu_tests.sh "not test_time_profilers"
+          on_retry_command: |
+            if [ -f .ignite_testing.pid ] && [ -s .ignite_testing.pid ]; then
+              echo sending kill signal until process group no longer exists...
+              python tests/utils/kill_process_group.py .ignite_testing.pid
+            fi
           new_command_on_retry: USE_LAST_FAILED=1  bash tests/run_cpu_tests.sh "not test_time_profilers"
 
   # create-issue:
