@@ -1,5 +1,6 @@
 import os
 import signal
+import sys
 import time
 
 import psutil
@@ -80,3 +81,13 @@ def kill_process_group_win(pid_file):
 
     print("Process terminated successfully with terminate signal")
     return 0
+
+
+if __name__ == "__main__":
+    if len(sys.argv) == 2:
+        pid_file = sys.argv[1]
+        result = kill_process_group(pid_file)
+        sys.exit(result)
+    else:
+        print("Please provide the path to the PID file as a command line argument.")
+        print("Example: python kill_process_group.py /path/to/pid_file")
