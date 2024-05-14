@@ -45,6 +45,7 @@ def test_kill_process_group_no_file():
         mock_print.assert_called_with(message)
 
 
+@pytest.mark.skipif(os.name != "posix", reason="Test only available on Unix-like systems")
 def test_is_script():
     epath = Path(__file__).resolve().with_name("kill_process_group.py")
     pid_file = ".kpg_testing.pid"

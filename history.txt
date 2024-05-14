@@ -1,0 +1,599 @@
+    1  cd /workspace/ignite/
+    2  git checkout retry-tests
+    3  git branch -a
+    4  git fetch leej3
+    5  vim ../id_rsa
+    6  chmod 700 ../id_rsa
+    7  eval `ssh-agent`; ssh-add ../id_rsa
+    8  git fetch leej3
+    9  git checkout retry-tests
+   10  exit
+   11  git log
+   12  git show
+   13  ls -a
+   14  cat pytest.ini
+   15  git push
+   16  gd
+   17  git diff
+   18  git commit -am fixup
+   19  git fetch origin
+   20  git rebase origin/master
+   21  git diff origin/master
+   22  exit
+   23  ls -a
+   24  git log
+   25  git log -p
+   26  git diff origin/master
+   27  touch hello
+   28  rm hello2; echo $?
+   29  rm -f hello2; echo $?
+   30  rm -f hello; echo $?
+   31  git status
+   32  git diff
+   33  hh
+   34  git status
+   35  git commit -a --amend
+   36  git diff origin/master
+   37  git log
+   38  bash tests/run_code_style.sh mypy
+   39  pip install mypy
+   40  bash tests/run_code_style.sh mypy
+   41  /usr/bin/python3 /root/.vscode-server/extensions/ms-python.python-2024.4.1/python_files/printEnvVariablesToFile.py /root/.vscode-server/extensions/ms-python.python-2024.4.1/python_files/deactivate/bash/envVars.txt
+   42  git diff
+   43  gac 'fix mypy errors'
+   44  git commit -am 'fix mypy errors'
+   45  git show
+   46  git log -p
+   47  git push
+   48  USE_LAST_FAILED=1 bash tests/run_cpu_tests.sh
+   49  USE_LAST_FAILED=1 bash tests/run_gpu_tests.sh
+   50  USE_LAST_FAILED=1 bash tests/run_cpu_tests.sh
+   51  USE_LAST_FAILED=0 bash tests/run_cpu_tests.sh
+   52  USE_LAST_FAILED=1 bash tests/run_cpu_tests.sh
+   53  git log
+   54  git rebase -i origin/master
+   55  git diff
+   56  gac attempts
+   57  git commit -am attempts
+   58  git rebase -i origin/master\
+   59  gl -p
+   60  git log -p
+   61  git rebase -i origin/master
+   62  git log -p
+   63  git push -
+   64  git push
+   65  git log
+   66  exit
+   67  /usr/bin/python3 /root/.vscode-server/extensions/ms-python.python-2024.4.1/python_files/printEnvVariablesToFile.py /root/.vscode-server/extensions/ms-python.python-2024.4.1/python_files/deactivate/bash/envVars.txt
+   68  cd /workspace/ignite/
+   69  pytest tests/ignite/handlers/test_fbresearch_logger.py
+   70  rm -f hello2; echo $?
+   71  pytest tests/ignite/handlers/test_fbresearch_logger.py
+   72  git status
+   73  git diff
+   74  git reset --hard
+   75  git status
+   76  git log
+   77  git fetch origin
+   78  eval `ssh-agent`; ssh-add ../id_rsa
+   79  git fetch origin
+   80  git log
+   81  git branch
+   82  git checkout retry-tests
+   83  git log
+   84  git log -p
+   85  git log leej3/retry-tests
+   86  git log
+   87  bash tests/run_cpu_tests.sh
+   88  git diff
+   89  git log
+   90  git stash
+   91  git reset --hard leej3/retry-tests
+   92  git log
+   93  git stash pop
+   94  git add tests/ignite/conftest.py
+   95  git diff --cached
+   96  git commit -m 'adjust tpu timeout
+   97  moves collection time test modification into the main hook for
+   98  modifying tests'
+   99  git commit -m 'adjust tpu timeout
+  100  moves collection time test modification into the main hook for
+  101  modifying tests'
+  102  git add tests/ignite/conftest.py
+  103  git commit -m 'adjust tpu timeout
+  104  moves collection time test modification into the main hook for
+  105  modifying tests'
+  106  git log
+  107  /usr/bin/python3 /root/.vscode-server/extensions/ms-python.python-2024.4.1/python_files/printEnvVariablesToFile.py /root/.vscode-server/extensions/ms-python.python-2024.4.1/python_files/deactivate/bash/envVars.txt
+  108  git status
+  109  pytest tests/ignite/handlers/test_fbresearch_logger.py  -m ' ' -m 'distributed'
+  110  pytest tests/ignite/handlers/test_fbresearch_logger.py  -m ' ' -m 'distributed' -m ' '
+  111  pytest tests/ignite/handlers/test_fbresearch_logger.py  -m ' '  -m ' '
+  112  pytest tests/ignite/handlers/test_fbresearch_logger.py
+  113  pytest tests/ignite/handlers/test_fbresearch_logger.py  -m distributed
+  114  pytest tests/ignite/handlers/test_fbresearch_logger.py  -m ''
+  115  pytest tests/ignite/handlers/test_fbresearch_logger.py  -m ' '
+  116  pytest tests/ignite/handlers/test_fbresearch_logger.py  -m ' ' -m ''
+  117  pytest tests/ignite/handlers/test_fbresearch_logger.py  -m ' ' -m '' -m ' '
+  118  pytest tests/ignite/handlers/test_fbresearch_logger.py  -m ' ' -m '' -k ''
+  119  pytest tests/ignite/handlers/test_fbresearch_logger.py  -m ' ' -m '' -k ' '
+  120  echo "-m 'not distributed'"
+  121  val="-m 'not distributed'"
+  122  echo $val
+  123  echo "a string $val"
+  124  echo "a string $val and more"
+  125  echo "a string $val and more with ' a tick '"
+  126  val2="a string $val and more with ' a tick '"
+  127  echo $val2
+  128  echo "another string containing the original '$val2'"
+  129  echo "another string containing the original '''$val2'''"
+  130  /Users/johnlee/mambaforge/envs/qreports/bin/python /root/.vscode-server/extensions/ms-python.python-2024.4.1/python_files/printEnvVariablesToFile.py /root/.vscode-server/extensions/ms-python.python-2024.4.1/python_files/deactivate/bash/envVars.txt
+  131  git log
+  132  git diff
+  133  gs
+  134  git status
+  135  git add tests/
+  136  git status
+  137  git commit -m 'tidy test scripts'
+  138  git add tests/
+  139  git commit -m 'tidy test scripts'
+  140  git log
+  141  git diff 3f5febf5229d4bffec65eff2bce70bb547718a53 HEAD
+  142  git diff
+  143  git status
+  144  git commit -a --amend
+  145  git show
+  146  git diff 3f5febf5229d4bffec65eff2bce70bb547718a53 HEAD
+  147  bash tests/run_cpu_tests.sh
+  148  pip install pytest-reportlog
+  149  pytest tests/ignite/handlers/test_fbresearch_logger.py
+  150  pytest tests/ignite/handlers/test_fbresearch_logger.py --report-log=log.jsonl
+  151  vim log.jsonl
+  152  pytest tests/ignite/handlers/test_fbresearch_logger.py --report-log=log.jsonl --lf
+  153  git log
+  154  git diff
+  155  git checkout HEAD tests/ignite/handlers/test_fbresearch_logger.py
+  156  git diff
+  157  git commit -am 'adjust timeouts'
+  158  git log
+  159  git log -p
+  160  git diff 3f5febf5229d4bffec65eff2bce70bb547718a53 HEAD
+  161  git log
+  162  git fetch origin
+  163  git rebase -i origin/master
+  164  git diff origin/master HEAD
+  165  git push
+  166  git push -f
+  167  git diff
+  168  git commit -am 'fix bugs'
+  169  git show
+  170  git push
+  171  /bin/python3 /root/.vscode-server/extensions/ms-python.python-2024.4.1/python_files/printEnvVariablesToFile.py /root/.vscode-server/extensions/ms-python.python-2024.4.1/python_files/deactivate/bash/envVars.txt
+  172  git log
+  173  git show origin/master:tests/run_cpu_tests.sh > orig_run_cpu_tests.sh
+  174  git checkout master
+  175  git status
+  176  git reset --hard origin/master
+  177  git checkout -
+  178  echo 2
+  179  echo "2"
+  180  val="2"; echo ${val}
+  181  val=2; echo ${val}
+  182  git diff
+  183  git commit -am 'fix distrib tests'
+  184  gi tshow
+  185  git show
+  186  git push
+  187  git log
+  188  source tests/common-test-functionality.sh
+  189  run_tests --world_size=2
+  190  kill -INT -- -293325
+  191  ps -efj | egrep "PGID|children|parent"
+  192  kill -9 -- -293325
+  193  kill -SIGQUIT -- -293325
+  194  ps -efj | egrep "PGID|children|parent"
+  195  kill -SIGQUIT -- -296402
+  196  kill -9 -- -296402
+  197  ps -efj | egrep "PGID|children|parent"
+  198  kill -SIGINT -- -297971
+  199  kill -SIGINT -9 -- -297971
+  200  kill  -9 -- -297971
+  201  ps -efj | egrep "PGID|children|parent"
+  202  /bin/sh
+  203  ps -efj | egrep "PGID|children|parent"
+  204  kill -9 -- -309505
+  205  ps -efj | egrep "PGID|children|parent"
+  206  kill -9 -- - /bin/bash ./grandparent.sh
+  207  root      311862  311861  311861  311624  0 10:26 pts/13   00:00:00
+  208  kill -9 -- -311861
+  209  ps -efj | egrep "PGID|children|parent"
+  210  pkill -g 313271
+  211  ps -efj | egrep "PGID|children|parent"
+  212  pkill -SIGTERM -g 314076
+  213  ps -efj | egrep "PGID|children|parent"
+  214  pkill -SIGINT -g 314873
+  215  pkill -SIGTERM -g 314873
+  216  bash setupprocessdemo.sh
+  217  ps -efj | egrep "PGID|children|parent"
+  218  pkill -SIGTERM -g 316341
+  219  ps -efj | egrep "PGID|children|parent"
+  220  pkill -g 317272
+  221  bash setupprocessdemo.sh
+  222  ps -efj | egrep "PGID|children|parent"
+  223  pkill -INT -g 317963
+  224  pkill -9 -g 317963
+  225  ps -efj | egrep "PGID|children|parent"
+  226  pkill -9 -g 319419
+  227  ps -efj | egrep "PGID|children|parent"
+  228  pkill -INT -g 319785
+  229  pkill -9 -g 319785
+  230  bash setupprocessdemo.sh
+  231  ps -efj | egrep "PGID|children|parent"
+  232  pkill -INT -g 320416
+  233  ps -efj | egrep "PGID|children|parent"
+  234  pkill -TERM -g 320416
+  235  bash setupprocessdemo.sh
+  236  ps -efj | egrep "PGID|children|parent"
+  237  pkill -INT -g 321985
+  238  pkill -9 -g 321985
+  239  bash setupprocessdemo.sh
+  240  ps -efj | egrep "PGID|children|parent"
+  241  pkill -INT -g 323284
+  242  pkill -TERM -g 323284
+  243  ps -efj | egrep "PGID|children|parent"
+  244  pkill -9 -g 324340
+  245  ps -efj | egrep "PGID|children|parent"
+  246  pkill -9 -g 324989
+  247  bash setupprocessdemo.sh
+  248  ps -efj | egrep "PGID|children|parent"
+  249  pkill -TERM -g 325695
+  250  ps -efj | egrep "PGID|children|parent"
+  251  pkill -INT -g 326068
+  252  pkill -9 -g 326068
+  253  bash setupprocessdemo.sh
+  254  ps -efj | egrep "PGID|children|parent"
+  255  pkill -TERM -g 326957
+  256  ps -efj | egrep "PGID|children|parent"
+  257  pkill -TERM -g 326957
+  258  pkill -INT -g 326957
+  259  pkill -9 -g 326957
+  260  bash setupprocessdemo.sh
+  261  ps -efj | egrep "PGID|children|parent"
+  262  pkill -INT -g 330818
+  263  pkill -TERM -g 330818
+  264  ps -efj | egrep "PGID|children|parent"
+  265  pkill -TERM -P 334999
+  266  ps -efj | egrep "PGID|children|parent"
+  267  pkill -KILL -P 334999
+  268  ps -efj | egrep "PGID|children|parent"
+  269  pkill -9 -P 334999
+  270  ps -efj | egrep "PGID|children|parent"
+  271  pkill -9 -P 334999
+  272  pkill -9 -G 334999
+  273  pkill -9 -g 334999
+  274  bash setupprocessdemo.sh
+  275  ps -efj | egrep "PGID|children|parent"
+  276  pkill -9 -P 337098
+  277  ps -efj | egrep "PGID|children|parent"
+  278  pkill -9  337098
+  279  pkill -9  -g 337098
+  280  kill -9 --  -337098
+  281  ps -efj | egrep "PGID|children|parent"
+  282  kill -9 --  -338297
+  283  ps -efj | egrep "PGID|children|parent"
+  284  kill -9 --  338944
+  285  ps -efj | egrep "PGID|children|parent"
+  286  bash setupprocessdemo.sh
+  287  kill -9 --  -338944
+  288  ps -efj | egrep "PGID|children|parent"
+  289  kill -9 --  339958
+  290  ps -efj | egrep "PGID|children|parent"
+  291  kill -9 --  -339958
+  292  /bin/sh
+  293  ps -efj | egrep "PGID|children|parent"
+  294  /bin/sh
+  295  ps -efj | egrep "PGID|children|parent"
+  296  /bin/sh
+  297  source tests/common-test-functionality.sh
+  298  run_tests
+  299  chmod +x grandparent.sh
+  300  ./grandparent.sh
+  301  /bin/sh
+  302  ./grandparent.sh
+  303  /bin/sh
+  304  man pkill
+  305  ps -efj | egrep "pytest"
+  306  ps -efj | egrep "pytest|PGID"
+  307  pkill -15 -g 344149
+  308  pkill -2 -g 344149
+  309  cd retry/
+  310  git diff
+  311  git reset --hard
+  312  git checkou tmaster
+  313  git checkout master
+  314  git diff
+  315  git log
+  316  git reset --hard 3f757583fb1b1f940bc8ef4bf4734c8dc02a5847
+  317  git log
+  318  git diff
+  319  git commit -am initial
+  320  git diff
+  321  git log
+  322  git checkout -b attempt
+  323  git checkout -
+  324  git reset --hard origin/master
+  325  git status
+  326  git log
+  327  git checkout -
+  328  git show
+  329  git diff
+  330  git commit -am 2
+  331  git diff origin/master HEAD
+  332  git commit -a --amend
+  333  gi tshow
+  334  git show
+  335  git diff origin/master HEAD
+  336  git log
+  337  git rebase -i origin/master
+  338  git show
+  339  git commit -a --amend
+  340  git show
+  341  git branch
+  342  git diff add_sigkill_logic HEAD
+  343  git branch
+  344  git checkout add_sigkill_logic -- .github/workflows/ci_cd.yml
+  345  git status
+  346  git commit --amend
+  347  git show
+  348  git diff
+  349  git show
+  350  git commit --amend
+  351  git show
+  352  git commit --amend
+  353  git commit --amend -a
+  354  git show
+  355  git log
+  356  git checkout -
+  357  git checkout add_sigkill_logic
+  358  git reset --hard attempt
+  359  git log
+  360  git show
+  361  git push
+  362  git push -f
+  363  git push
+  364  eval `ssh-agent`; ssh-add ../id_rsa
+  365  eval `ssh-agent`; ssh-add /workspace/id_rsa
+  366  git push
+  367  git push -f
+  368  cd ..
+  369  git status
+  370  git log
+  371  ps aux
+  372  pkill -0 403333
+  373  pkill -0 1
+  374  pkill -0 -f 403333
+  375  ps -p 0
+  376  ps -p 1
+  377  ps -p 321321321
+  378  ps -p $PID > /dev/null
+  379  ps -p $PID &> /dev/null
+  380  ps -p $PID &> /dev/null && echo yes
+  381  ps -p 1 &> /dev/null && echo yes
+  382  ps -efj | egrep "PGID|children|parent"
+  383  pkill -INT -g 405617
+  384  pkill -TERM -g 405617
+  385  pkill -INT -g 405617
+  386  pkill -KILL -g 405617
+  387  git diff
+  388  ps -p 1 &> /dev/null && echo yes
+  389  ps -p 1
+  390  git diff
+  391  git log -p .github/workflows/gpu-tests.yml
+  392  cat << EOF > run_gpu_tests.sh
+  393  set -xe
+  394  bash tests/run_gpu_tests.sh 2
+  395  EOF
+  396  cat << EOF > run_gpu_tests.sh
+  397  set -xe
+  398  echo hello `id`
+  399  EOF
+  400  docker ps
+  401  git diff
+  402  git commit -m bugfix .github/workflows/unit-tests.yml
+  403  git diff
+  404  git commit -m 'expand use of on_retry_command
+  405  also adds retry for gpu tests'
+  406  git commit -am 'expand use of on_retry_command
+  407  also adds retry for gpu tests'
+  408  git log -p
+  409  ps -p 7
+  410  ps -p 7 > /dev/null
+  411  ps -p  > /dev/null
+  412  ps -p 34324324324 > /dev/null
+  413  ps -p 3432 > /dev/null
+  414  ps -p 343222 > /dev/null
+  415  git diff
+  416  git show
+  417  git commit --amend -a
+  418  git show
+  419  git log
+  420  git fetch origin
+  421  git rebase -i origin/master
+  422  git log -p
+  423  git push
+  424  git push -f
+  425  /usr/bin/python3 /root/.vscode-server/extensions/ms-python.python-2024.4.1/python_files/printEnvVariablesToFile.py /root/.vscode-server/extensions/ms-python.python-2024.4.1/python_files/deactivate/bash/envVars.txt
+  426  bash tests/common-test-functionality.sh
+  427  git diff
+  428  git status
+  429  git commit -am 'add function for killing process group'
+  430  bash tests/common-test-functionality.sh
+  431  git diff
+  432  git commit --amend -a
+  433  bash tests/common-test-functionality.sh
+  434  git diff
+  435  bash tests/common-test-functionality.sh
+  436  bash -x tests/common-test-functionality.sh
+  437  bash tests/kill_process_group.sh
+  438  bash -x tests/kill_process_group.sh
+  439  git add tests/kill_process_group.sh
+  440  git commit -m initial
+  441  git add tests/kill_process_group.sh
+  442  git commit -m initial
+  443  git diff
+  444  git checkout HEAD tests/common-test-functionality.sh
+  445  git diff
+  446  git commit -am improved
+  447  bash tests/kill_process_group.sh
+  448  git diff
+  449  pre-commit run
+  450  git add tests/kill_process_group.sh
+  451  pre-commit run
+  452  git add tests/kill_process_group.sh
+  453  pre-commit run
+  454  git diff --cached
+  455  bash tests/kill_process_group.sh
+  456  git status
+  457  git commit -m next
+  458  bash tests/kill_process_group.sh
+  459  git commit -am next
+  460  bash tests/kill_process_group.sh
+  461  git commit -am working
+  462  bash tests/kill_process_group.sh
+  463  sleep 1000 &
+  464  source tests/kill_process_group.sh
+  465  echo 463773 > megroup.pid
+  466  kill_process_group megroup.pid
+  467  source tests/kill_process_group.sh
+  468  bash tests/kill_process_group.sh
+  469  source tests/kill_process_group.sh
+  470  ps -efj | egrep "PGID|children|parent"
+  471  kill_process_group <(466005)
+  472  ps -efj | egrep "PGID|children|parent"
+  473  echo 466005 > megroup.pid
+  474  source tests/kill_process_group.sh
+  475  kill_process_group megroup.pid
+  476  ps -efj | egrep "PGID|children|parent"
+  477  echo <(echo 467574)
+  478  kill_process_group <(echo 467574)
+  479  ps -efj | egrep "PGID|children|parent"
+  480  echo <(echo 467574)
+  481  cat <(echo 467574)
+  482  kill_process_group <(echo 467574)
+  483  ps -efj | egrep "PGID|children|parent"
+  484  source tests/kill_process_group.sh
+  485  kill_process_group <(echo 467574)
+  486  source tests/kill_process_group.sh
+  487  ps -efj | egrep "PGID|children|parent"
+  488  ps -efj | egrep "PGID|children|parent|467574"
+  489  (kill_process_group <(echo 467574))
+  490  source tests/kill_process_group.sh
+  491  ps -efj | egrep "PGID|children|parent|467574"
+  492  set -x
+  493  ps -efj | egrep "PGID|children|parent|470113"
+  494  set -x
+  495  (kill_process_group <(echo 470113))
+  496  ps -efj | egrep "PGID|children|parent|470113"
+  497  ps -efj | egrep "PGID|children|parent|473237"
+  498  source tests/kill_process_group.sh
+  499  (kill_process_group 473237)
+  500  source tests/kill_process_group.sh
+  501  ps -efj | egrep "PGID|children|parent|473237"
+  502  (kill_process_group grandparent.pid)
+  503  RUN_TESTS=1 bash tests/kill_process_group.sh
+  504  bash tests/kill_process_group.sh
+  505  RUN_TESTS=1 bash tests/kill_process_group.sh
+  506  source tests/kill_process_group.sh
+  507  RUN_TESTS=1 bash tests/kill_process_group.sh
+  508  bash tests/kill_process_group.sh
+  509  bash tests/kill_process_group.sh grandparent.pid
+  510  RUN_TESTS=1 bash tests/kill_process_group.sh
+  511  bash tests/kill_process_group.sh grandparent.pid
+  512  bash grandparent.sh
+  513  ps -efj | egrep "PGID|children|parent|543136"
+  514  bash grandparent.sh
+  515  cat .kpg_testing.pid
+  516  kill -15 545425
+  517  kill -15 --  -545425
+  518  setsid sh -c 'trap \"\" TERM INT exit; sleep 1000'
+  519  ps -efj | egrep "PGID|children|parent|543136"
+  520  ps -efj | egrep "PGID|children|parent|sleep"
+  521  setsid sh -c 'trap \"echo exiting; exit \" INT exit; sleep 1000' >/dev/null 2>&1 & echo $! > .kpg_testing.pid
+  522  ps -efj | egrep "PGID|children|parent|sleep"
+  523  cat .kpg_testing.pid
+  524  kill -0 547125
+  525  kill -0 -- 547125
+  526  setsid sh -c 'trap \"echo exiting; exit \" INT ; sleep 1000' >/dev/null 2>&1 & echo $! > .kpg_testing.pid
+  527  bash grandparent.sh
+  528  ps -efj | egrep "PGID|children|parent|sleep"
+  529  echo 546263 >pid ; python tests/kill_process_group.py pid
+  530  echo 546677 >pid ; python tests/kill_process_group.py pid
+  531  ps -efj | egrep "PGID|children|parent|sleep"
+  532  echo 549498 >pid ; python tests/kill_process_group.py pid
+  533  ps -efj | egrep "PGID|children|parent|sleep"
+  534  ps -efj | egrep "PGID|children|parent|sleep"
+  535  cat .kpg_testing.pid
+  536  ps -efj | egrep "PGID|children|parent|sleep"
+  537  cat .test
+  538  python tests/kill_process_group.py .test
+  539  ps -efj | egrep "PGID|children|parent|sleep"
+  540  ps -efj | egrep "PGID|children|parent|pytest"
+  541  vim .test
+  542  python tests/kill_process_group.py .test
+  543  ps -efj | egrep "PGID|children|parent|pytest"
+  544  ps -efj | egrep "PGID|children|parent|pytest|python"
+  545  ps -efj | egrep "PGID|children|parent|pytest|python|554912"
+  546  ps -efj | egrep "PGID|children|parent|pytest|python"
+  547  ps -efj | egrep "PGID|children|parent|pytest|python|556637"
+  548  vim .test
+  549  python tests/kill_process_group.py .test
+  550  ps -efj | egrep "PGID|children|parent|pytest|python|556637"
+  551  ps -efj | egrep "PGID|children|parent|pytest|python|557327"
+  552  vim .test
+  553  python tests/kill_process_group.py .test
+  554  bash grandparent.sh
+  555  ps -efj | egrep "PGID|children|parent|pytest|python|557327"
+  556  python tests/kill_process_group.py .test
+  557  cat .kpg_testing.pid
+  558  ps -efj | egrep "PGID|children|parent|pytest|python|571428"
+  559  ps -efj | egrep "PGID|children|parent|pytest|python|$(cat .kpg_testing.pid)"
+  560  cat .kpg_testing.pid
+  561  python tests/kill_process_group.py .kpg_testing.pid
+  562  ps -efj | egrep "PGID|children|parent|pytest|python|$(cat .kpg_testing.pid)"
+  563  python tests/kill_process_group.py .kpg_testing.pid
+  564  ps -efj | egrep "PGID|children|parent|pytest|python|$(cat .kpg_testing.pid)"
+  565  ps -efj | egrep "PGID|children|parent|pytest|python|$(cat .kpg_testing.pid)|defunct"
+  566  python tests/kill_process_group.py .kpg_testing.pid
+  567  ps -efj | egrep "PGID|children|parent|pytest|python|$(cat .kpg_testing.pid)|defunct"
+  568  python tests/kill_process_group.py .kpg_testing.pid
+  569  ps -efj | egrep "PGID|children|parent|pytest|python|$(cat .kpg_testing.pid)|defunct"
+  570  python tests/kill_process_group.py .kpg_testing.pid
+  571  setsid
+  572  setsid --help
+  573  setsid bash -c 'echo hello'
+  574  setsid 'echo $0'
+  575  setsid 'echo $SHELL'
+  576  setsid 'echo test'
+  577  setsid bash -c 'echo test'
+  578  echo $!; setsid bash -c 'echo $!'
+  579  echo $!
+  580  echo $!; setsid bash -c 'echo \'$!\''
+  581  '
+  582  setsid bash -c 'trap "echo exiting;exit INT TERM; echo hello\n'
+  583  setsid bash -c 'trap "echo exiting;exit" INT TERM; echo hello'
+  584  setsid bash -c 'trap "echo exiting;exit" INT TERM; echo hello\n'
+  585  setsid bash -c 'trap "echo exiting;exit" INT TERM; echo hello;echo $!'
+  586  setsid bash -c 'trap "echo exiting;exit" INT TERM; echo hello;sleep 100'
+  587  setsid bash -c 'trap "echo exiting;exit" INT TERM; echo hello;sleep 1000'
+  588  trap "exit" INT TERM setsid bash -c 'trap "echo exiting;exit" INT TERM; echo hello;sleep 1000'
+  589  trap "exit" INT TERM; setsid bash -c 'trap "echo exiting;exit" INT TERM; echo hello;sleep 1000'
+  590  cd /workspace/ignite/
+  591  git status
+  592  git branch -a
+  593  git commit -am temp
+  594  git push leej3 HEAD:temp-retry-tests
+  595  eval `ssh-agent`; ssh-add /workspace/id_rsa
+  596  git push leej3 HEAD:temp-retry-tests
+  597  git push leej3 HEAD:temp-retry-tests -f
+  598  history
+  599  history > history.txt

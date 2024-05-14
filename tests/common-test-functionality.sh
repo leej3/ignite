@@ -17,8 +17,8 @@ run_tests() {
     local world_size=0
     # Always clean up pytest.ini
     trap 'rm -f pytest.ini' RETURN
-    # write out the process id so that we can send signals...
-    echo $$ > .ignite_testing.pid
+    # write out the process group id so that we can send signals...
+    echo $(ps -o pgid= $$) > .ignite_testing.pid
     # Parse arguments
     while [[ $# -gt 0 ]]
     do

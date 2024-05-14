@@ -7,6 +7,7 @@ import psutil
 
 
 def kill_process_group(pid_file):
+    print("Sending kill signal until process group no longer exists...")
     if not os.path.isfile(pid_file) or os.stat(pid_file).st_size == 0:
         print(f"File {pid_file} does not exist or is empty")
         return 1
